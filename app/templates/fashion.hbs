@@ -1,0 +1,22 @@
+ <h1 id="books">Fashions</h1>
+
+<ul>
+  {{#each model as |fashion|}}
+     
+     <li>
+		 <div class="content group">
+			 <div class="col-md-6 img1">
+			 	<img src="{{fashion.image}}">
+			 </div>
+			 <div class="col-md-6">
+			 	<h3>{{fashion.heading}}</h3>
+			  	<p>{{fashion.content}}</p>
+			 </div>
+		 </div>
+     </li>
+     
+  {{/each}}
+
+
+  
+</ul>

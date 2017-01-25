@@ -1,0 +1,23 @@
+<h1 id="books">Books</h1>
+<ul>
+  {{#each model as |book|}}
+     
+     <li>
+		 <div class="content group">
+			 <div class="col-md-6 img1">
+			 	<img src="{{book.image}}">
+			 </div>
+			 <div class="col-md-6">
+			 	<h3>{{book.heading}}</h3>
+			  	<p>{{book.content}}</p>
+			 </div>
+		 </div>
+     </li>
+     
+  {{/each}}
+
+
+  
+</ul>
+ 
+

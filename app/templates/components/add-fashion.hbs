@@ -1,0 +1,26 @@
+{{#if addNewFashion}}
+  <h1 class="new">Add New Fashion</h1>
+  <div>
+    <form id="form">
+      <div class="form-group">
+        <label for="heading">Enter fashion title</label>
+        {{input value=heading id="heading"}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Enter the content</label>
+        {{input value=content id="content"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Enter the image</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button class="btn btn btn-primary btn-md" {{action 'saveFashion1'}}>Save</button>
+    </form>
+  </div>
+
+{{else}}
+  <button class="btn btn btn-success btn-lg" {{action 'fashionFormShow'}}>New Fashion</button>
+{{/if}}
